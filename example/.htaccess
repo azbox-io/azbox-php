@@ -1,0 +1,21 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Handle language prefixes (e.g., /example/es/, /example/fr/)
+# Allow access to language subdirectories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect everything to index.php (useful for language routes)
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# PHP Configuration (optional)
+php_flag display_errors On
+php_value error_reporting E_ALL
+
+# Security: Prevent directory listing
+Options -Indexes
+
+# Set default index file
+DirectoryIndex index.php index.html
+

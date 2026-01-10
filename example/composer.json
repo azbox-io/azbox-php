@@ -1,0 +1,9 @@
+{
+    "name": "azbox/example",
+    "description": "Ejemplo de uso de azbox-php",
+    "require": {
+        "php": ">=5.6.0",
+        "azbox/azbox-php": "*"
+    }
+}
+
