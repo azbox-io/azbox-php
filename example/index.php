@@ -15,6 +15,7 @@ require_once __DIR__ . '/../azbox.php';
 // Initialize Azbox
 // IMPORTANT: Replace 'YOUR_API_KEY' and 'YOUR_PROJECT_ID' with your real API key and project ID
 // You can get them at: https://panel.azbox.io/register
+// Supported languages: https://github.com/azbox-io/azbox-php/blob/main/SUPPORTED_LANGUAGES.md
 \Azbox\AZ::Instance(array(
     "api_key" => "YOUR_API_KEY", // Replace with your API key
     "project_id" => "YOUR_PROJECT_ID", // Replace with your project ID
